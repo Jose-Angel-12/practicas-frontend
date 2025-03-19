@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay1{
+    background: 
+    linear-gradient(rgba(232,39,197,.5), rgba(232,39,197,.5)),
+    url(img/image1.jpg);
+    background-size: cover;
+}
+
+.overlay2{
+    background: 
+    linear-gradient(to right,rgba(0,0,0,.9), transparent),
+    url(img/image2.jpg);
+    background-size: cover;
+}
+
+.overlay3{
+    background: 
+    radial-gradient(rgba(255,255,255,.5), rgba(0,0,0,1) 80%),
+    url(img/image3.jpg);
+    background-size: cover;
+}
+
+h1{
+    font-size: 50px;
+    color: #ffffff;
+}

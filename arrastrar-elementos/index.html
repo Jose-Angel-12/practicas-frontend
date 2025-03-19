@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arrastrando objetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Arrastrando donde corresponde</h1>
+    <div class="contenedores__img">
+        <img src="img/gato.png" alt="gato" draggable="true" ondragstart="drag(event)" id="gato">
+        <img src="img/perro.png" alt="perro" draggable="true" ondragstart="drag(event)" id="perro">
+        <img src="img/loro.png" alt="loro" draggable="true" ondragstart="drag(event)" id="loro">
+    </div>
+
+    <div class="contenedores">
+
+        <div class="contenedores-cajas">
+            <div class="cajas" id="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <h2>Gato</h2>
+        </div>
+
+        <div class="contenedores-cajas">
+            <div class="cajas" id="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <h2>Perro</h2>
+        </div>
+
+        <div class="contenedores-cajas">
+            <div class="cajas" id="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <h2>Loro</h2>
+        </div>
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
