@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <link rel="stylesheet" href="style.css">
-        <title>Menu Colapsable</title>
-    </head>
-    
-    <body>
 
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Menu Colapsable</title>
+</head>
+
+<body>
+    <header>
+        <a href="">
+            <i class="fas fa-bars"></i>
+        </a>
+        <span>Mi Biblioteca</span>
+    </header>
+    <section>
+        <nav id="sideBar" class="sideBar">
+            <div class="info">
+                <img src="img/leyendo.png" alt="" class="img-info" id="img-info">
+                <div id="texto-info">
+                    <p>Mi Biblioteca</p>
+                </div>
+            </div>
+            <ul>
+                <li class="selected">
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        <span class="txtLink">Inicio</span>
+                    </a>
+                </li>
+                <li class="selected">
+                    <a href="#">
+                        <i class="fas fa-book"></i>
+                        <span class="txtLink">Catálogo</span>
+                    </a>
+                </li>
+                <li class="selected">
+                    <a href="#">
+                        <i class="fas fa-user-cog"></i>
+                        <span class="txtLink">Servicios</span>
+                    </a>
+                </li>
+                <li class="selected">
+                    <a href="#">
+                        <i class="fas fa-envelope"></i>
+                        <span class="txtLink">Contacto</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </section>
+</body>
+
 </html>
