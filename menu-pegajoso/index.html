@@ -39,7 +39,14 @@
                 background-color: #04aa6d;
                 color: white;
             }
-            
+            .sticky{
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .sticky + .info{
+                padding-top: 60px;
+            }
 
         </style>
     </head>
@@ -73,5 +80,22 @@
         </div>
         
     </body>
-    <script src="app.js"></script>
+    <script>
+        window.onscroll = function(){miFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        console.log(sticky);
+
+        function miFunction(){
+            if(window.pageYOffset >= sticky){
+                navbar.classList.add("sticky");
+                console.log(window.pageYOffset);
+
+            }else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </html>
