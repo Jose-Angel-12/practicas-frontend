@@ -7,8 +7,25 @@
     <link rel="stylesheet" href="style.css">
     <title>Efecto Tipeo</title>
 </head>
-<body>
 
+<body>
+    <h1 id="texto"></h1>
+
+    <script>
+        var i = 0;
+        var txt = "Bienvenido a código wed";
+        var speed = 80;
+
+        function typeWrite(){
+            if(i < txt.length){
+                document.getElementById("texto").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWrite, speed);
+            }
+        }
+
+        typeWrite();
+    </script>
 
 </body>
 
