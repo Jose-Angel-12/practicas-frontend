@@ -43,4 +43,32 @@ section .info{
     opacity: 1;
     transition: 1s linear;
 }
+.tennis{
+    transform: scale(0.5);
+    opacity: 0;
+}
+.efecto-tennis{
+    transform: scale(1);
+    opacity: 1;
+}
+.judo{
+    position: relative;
+    bottom: -80px;
+    opacity: 0;
+}
+.judo-efecto{
+    opacity: 1;
+    bottom: 0;
+    transition: 1s linear;
+}
+.natacion{
+    transform: scale(.5);
+    opacity: 0;
+}
+.natacion-efecto{
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s linear;
+}
+
 
