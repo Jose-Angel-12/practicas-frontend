@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt';
+}
+
+section{
+    height: 70vh;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+#inicio{
+    background-color: #0c2139;
+    color: #4ad295;
+    height: 100vh;
+}
+
+section h1{
+    font-size: 70px;
+}
+section img{
+    width: 350px;
+    margin: 0 50px;
+}
+section .info{
+    width: 600px;
+    margin: 0 50px;
+}
+.futbol{
+    position: relative;
+    left: -50px;
+    opacity: 0;
+}
+.efecto-futbol{
+    left: 0;
+    opacity: 1;
+    transition: 1s linear;
+}
+
