@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: 'Prompt';
 }
-
 section{
     height: 70vh;
     font-size: 30px;
@@ -15,13 +14,11 @@ section{
     align-items: center;
     color: #000;
 }
-
 #inicio{
     background-color: #0c2139;
     color: #4ad295;
     height: 100vh;
 }
-
 section h1{
     font-size: 70px;
 }
@@ -50,6 +47,7 @@ section .info{
 .efecto-tennis{
     transform: scale(1);
     opacity: 1;
+    transition: 1s linear;
 }
 .judo{
     position: relative;
@@ -62,7 +60,7 @@ section .info{
     transition: 1s linear;
 }
 .natacion{
-    transform: scale(.5);
+    transform: scale(0.5);
     opacity: 0;
 }
 .natacion-efecto{
